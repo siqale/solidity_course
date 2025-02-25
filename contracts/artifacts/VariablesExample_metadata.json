@@ -1,10 +1,55 @@
 {
 	"compiler": {
-		"version": "0.8.4+commit.c7e474f2"
+		"version": "0.8.28+commit.7893614a"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_myString",
+						"type": "string"
+					}
+				],
+				"name": "BytesToString",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bool",
+						"name": "_True_or_False",
+						"type": "bool"
+					}
+				],
+				"name": "changePermision",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getMyMytesLenght",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
 			{
 				"inputs": [
 					{
@@ -39,6 +84,45 @@
 						"internalType": "uint8",
 						"name": "",
 						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_myName",
+						"type": "string"
+					}
+				],
+				"name": "myAddressRegister",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "myBytes",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -104,6 +188,58 @@
 			},
 			{
 				"inputs": [],
+				"name": "permission",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "registerAddress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "registeredAccount",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes",
+						"name": "_data",
+						"type": "bytes"
+					}
+				],
+				"name": "storageData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "testLimit",
 				"outputs": [
 					{
@@ -131,7 +267,7 @@
 		"compilationTarget": {
 			"contracts/variables.sol": "VariablesExample"
 		},
-		"evmVersion": "istanbul",
+		"evmVersion": "cancun",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -144,11 +280,11 @@
 	},
 	"sources": {
 		"contracts/variables.sol": {
-			"keccak256": "0xbc3e408f592dd095e6f3620c592703db7386adb2aa1a4747d9ef8df384c70948",
+			"keccak256": "0x49b6239ce509764b220ed2de304a92439cb40a9ad00cf23508096fd660d473b5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8ae0770ae947529e09f4166978f0429c5d83e48ac5f5859a8d57649dc5e24861",
-				"dweb:/ipfs/QmNMwNvRry3Un61gDXBD3WQH2eUzpF89JogAoUxiMAL3xz"
+				"bzz-raw://d30e449b04f3a4c21644ae6b252e6de1dda0986217d04973015cc4ec953d6aa8",
+				"dweb:/ipfs/QmYVdoUXhw4JF5SLLigFxy2nfvzMjsP9PA2X5iAHRYddps"
 			]
 		}
 	},
